@@ -28,7 +28,7 @@ export default function CategoryPage() {
             <SharedTabs />
             {SelectedCategory || (
                 <div className="text-center text-white py-20 text-lg">
-                    Category "<span className='capitalize'>{category}</span>" not found.
+                    Category &quot;<span className='capitalize'>{category}</span>&quot; not found.
                 </div>
             )}
             <div className='px-4 mt-5'>

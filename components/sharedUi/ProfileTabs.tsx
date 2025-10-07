@@ -42,7 +42,7 @@ function ProfileTabsInner<T>({ tabs, defaultTab }: TabSectionProps<T>) {
     if (tabParam && tabParam !== activeTab) {
       setActiveTab(tabParam);
     }
-  }, [tabParam]);
+  }, [tabParam, activeTab]);
 
   return (
     <Tabs

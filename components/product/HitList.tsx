@@ -14,9 +14,15 @@ import { mergedList } from "@/context/Content"
 import CardPopup from "./CardPopup"
 import React from "react"
 
+interface HitEntry {
+    player: string
+    card: string
+    hit: string
+}
+
 export function HitList() {
     const [openSecond, setOpenSecond] = React.useState(false)
-    const [selectedRow, setSelectedRow] = React.useState<any>(null)
+     const [selectedRow, setSelectedRow] = React.useState<HitEntry | null>(null) 
 
     return (
         <Dialog>
