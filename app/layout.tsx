@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import 'swiper/css';
 import "./globals.css";
+import Announcement from "@/components/sharedUi/Announcement";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased bg-white overflow-hidden`}
       >
+        <Announcement />
         {children}
       </body>
     </html>

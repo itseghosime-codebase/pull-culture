@@ -58,8 +58,8 @@ export function AppSidebar() {
   }, [checkSession]);
 
   return (
-    <Sidebar variant="inset" className="py-2.5 pr-2.5 !border-r-0">
-      <div className="bg-dark rounded-r-4xl py-6 px-5 space-y-4 h-full overflow-scrol flex flex-col">
+    <Sidebar variant="inset" className="pt-[54px] pr-2.5 pb-0 !border-r-0">
+      <div className="bg-dark rounded-tr-4xl py-4 px-5 space-y-4 h-full flex flex-col">
         <SidebarHeader className="items-start">
           <Image
             src={"/assets/logo/pull_culture.svg"}

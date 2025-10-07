@@ -31,7 +31,7 @@ export function SidebarWithInset({ children }: { children: React.ReactNode }) {
         <SidebarInset
             className={`
         flex flex-col h-screen text-white rounded-none !shadow-none transition-all duration-300
-        overflow-hidden !m-0 pt-2.5
+        overflow-hidden !m-0 pt-[50px] lg:pt-[55px]
         
       `}
         >
