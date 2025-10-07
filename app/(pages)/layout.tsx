@@ -18,7 +18,7 @@ export default function PageLayout({
     )
 }
 
-export function SidebarWithInset({ children }: { children: React.ReactNode }) {
+function SidebarWithInset({ children }: { children: React.ReactNode }) {
     const { open } = useSidebar() // ← Hook to access sidebar open state
     const [isOpen, setIsOpen] = useState(open)
 
