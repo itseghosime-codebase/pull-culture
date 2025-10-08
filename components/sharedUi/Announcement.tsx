@@ -4,6 +4,7 @@ import { X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Marquee } from "../ui/marquee"
 import { useAnnouncementStore } from "@/lib/store/announcement-store"
+import React from "react"
 
 const messages = [
   "🎉 Free shipping on orders above $100!",
@@ -21,6 +22,11 @@ export default function Announcement() {
   const baseSpeedPerItem = 12 // seconds per message
   const durationSeconds = messages.length * baseSpeedPerItem
 
+  // Type-safe CSS variable
+  const marqueeStyle: React.CSSProperties = {
+    ["--duration" as unknown as keyof React.CSSProperties]: `${durationSeconds}s`,
+  }
+
   return (
     <div
       className={cn(
@@ -31,8 +37,9 @@ export default function Announcement() {
       {/* Marquee Section */}
       <div className="flex-1 overflow-hidden">
         <Marquee
+          pauseOnHover
           className="flex gap-8 text-sm sm:text-base"
-          style={{ ["--duration" as any]: `${durationSeconds}s` }}
+          style={marqueeStyle}
         >
           {messages.map((msg, i) => (
             <span key={i} className="whitespace-nowrap">
