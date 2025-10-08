@@ -52,14 +52,6 @@ export function TabsSection<T>({
     return () => window.removeEventListener("resize", updateIndicator)
   }, [updateIndicator])
 
-  // ✅ Corrected grid layout logic
-  const gridCols = cn(
-    "grid gap-4",
-    "grid-cols-2", // base (mobile)
-    sidebarOpen
-      ? "md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 3xl:grid-cols-7" // fewer columns (sidebar open)
-      : "md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4" // more columns (sidebar closed)
-  )
 
   return (
     <Tabs
@@ -99,7 +91,7 @@ export function TabsSection<T>({
       {/* Tab Content */}
       {tabs.map((tab) => (
         <TabsContent key={tab.title} value={tab.title}>
-          <div className={gridCols}>
+          <div className={'grid gap-6 grid-cols-[repeat(auto-fill,minmax(270px,1fr))]'}>
             {tab.data.length > 0 ? (
               tab.data.map((item, index) => tab.renderItem(item, index))
             ) : (

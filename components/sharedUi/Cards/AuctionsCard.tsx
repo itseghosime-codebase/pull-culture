@@ -14,7 +14,6 @@ interface AuctionCardProps {
   price: number
   bids: number
   closeTime: string
-  marketPlace?: boolean
 }
 
 export default function AuctionsCard({
@@ -24,8 +23,7 @@ export default function AuctionsCard({
   packId,
   price,
   bids,
-  closeTime,
-  marketPlace
+  closeTime
 }: AuctionCardProps) {
   const [loading, setLoading] = useState(true)
 
@@ -36,7 +34,7 @@ export default function AuctionsCard({
 
   if (loading) {
     return (
-      <div className={marketPlace ? 'w-full' : 'h-full w-56 lg:w-60 xl:w-[280px]'}>
+      <div className={'w-full'}>
         <div className="flex flex-col gap-3 p-4">
           <Skeleton className="h-40 w-full rounded-lg" />
           <Skeleton className="h-4 w-3/4" />
@@ -51,7 +49,7 @@ export default function AuctionsCard({
   }
 
   return (
-    <div className={marketPlace ? 'w-full' : 'h-full w-56 lg:w-60 xl:w-[280px]'}>
+    <div className={'w-full'}>
       <div className='flex items-center justify-center pt-6'>
         <Image
           src={imageSrc}

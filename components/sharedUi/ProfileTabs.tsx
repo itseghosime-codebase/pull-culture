@@ -84,7 +84,7 @@ function ProfileTabsInner<T>({ tabs, defaultTab }: TabSectionProps<T>) {
       {/* Tab Contents */}
       {tabs.map((tab) => (
         <TabsContent key={tab.title} value={tab.title}>
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-4">
             {tab.data.length > 0 ? (
               tab.data.map((item, index) => tab.renderItem(item, index))
             ) : (

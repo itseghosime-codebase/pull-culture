@@ -24,11 +24,11 @@ export default function HitListCat({ title, chance, cards }: HitListCatProps) {
 
   // Determine grid columns dynamically
   const gridCols =
-    cards.length < 5
-      ? "grid-cols-3 md:grid-cols-4"
-      : cards.length < 8
-        ? "grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
-        : "grid-cols-3 md:grid-cols-4 lg:grid-cols-8"
+    title === 'GRAIL'
+      ? "grid-cols-[repeat(auto-fill,minmax(250px,1fr))]"
+      : title === 'CHASERS'
+        ? "grid-cols-[repeat(auto-fill,minmax(220px,1fr))]"
+        : "grid-cols-[repeat(auto-fill,minmax(130px,1fr))]"
 
   const handleCardClick = (card: Card) => {
     setSelectedCard(card)

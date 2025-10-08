@@ -30,7 +30,7 @@ export default function Marketplace() {
                         data: AuctionsDb,
                         renderItem: (item, index) => (
                             <div key={index} className="bg-card rounded-xl overflow-hidden">
-                                <AuctionsCard marketPlace {...item} />
+                                <AuctionsCard {...item} />
                             </div>
                         ),
                     },
@@ -39,7 +39,7 @@ export default function Marketplace() {
                         data: AuctionsDb,
                         renderItem: (item, index) => (
                             <div key={index} className="bg-card rounded-xl overflow-hidden">
-                                <AuctionsCard marketPlace {...item} />
+                                <AuctionsCard {...item} />
                             </div>
                         ),
                     },
@@ -48,7 +48,7 @@ export default function Marketplace() {
                         data: AuctionsDb,
                         renderItem: (item, index) => (
                             <div key={index} className="bg-card rounded-xl overflow-hidden">
-                                <AuctionsCard marketPlace {...item} />
+                                <AuctionsCard {...item} />
                             </div>
                         ),
                     },
