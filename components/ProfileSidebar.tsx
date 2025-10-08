@@ -85,14 +85,16 @@ export function ProfileSidebar() {
         <Sidebar variant="inset" className={`${isVisible && 'pt-[50px] lg:pt-[55px]'} transition-all duration-300 pr-2.5 !pb-0 !border-r-0`}>
             <div className="bg-dark rounded-tr-4xl py-6 px-5 space-y-4 h-full overflow-scroll flex flex-col">
                 <SidebarHeader className="items-start">
-                    <Image
-                        src={"/assets/logo/pull_culture.svg"}
-                        alt="Logo"
-                        width={210}
-                        height={50}
-                        priority
-                        className="h-auto w-full"
-                    />
+                    <Link href={'/'}>
+                        <Image
+                            src={"/assets/logo/pull_culture.svg"}
+                            alt="Logo"
+                            width={210}
+                            height={50}
+                            priority
+                            className="h-auto w-full"
+                        />
+                    </Link>
                 </SidebarHeader>
 
                 <SidebarContent>

@@ -156,6 +156,146 @@ const RecentPacks = [{
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
     timeStamp: '3 minutes ago'
+},{
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+},{
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+},{
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+},{
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+},{
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    createdAt: '2016 Pokémon',
+    packName: 'Pokémon Ember Pack',
+    hitChance: 0.5,
+    timeStamp: '3 minutes ago'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
@@ -185,9 +325,278 @@ const Packs = [{
     imageSrc: '/assets/cards/Pack-01.png',
     title: 'Baseball Ember Pack',
     price: 25
+},{
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+},{
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+},{
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+},{
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
+}, {
+    imageSrc: '/assets/cards/Pack-01.png',
+    title: 'Baseball Ember Pack',
+    price: 25
 }]
 
 const Recents = [{
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+},{
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+},{
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+}, {
+    imageSrc: '/assets/cards/Pack-02.png',
+    title: 'Baseball Ember Pack',
+    pack: '2000 Pokémon Gym Heroes',
+    rank: '#59 - 1st Edition - PSA 10 GEM MINT',
+    price: 120,
+    timeStamp: '3 minutes ago'
+},{
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',

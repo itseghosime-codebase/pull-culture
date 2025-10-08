@@ -15,7 +15,7 @@ export default function PullAPack() {
                 grabCursor={true}
                 className="mySwiper"
             >
-                {Packs.slice(0, 10).map((pulls, index) => (
+                {Packs.map((pulls, index) => (
                     <SwiperSlide className='bg-card rounded-xl overflow-hidden !w-fit' key={index}>
                         <PackCard {...pulls} />
                     </SwiperSlide>
