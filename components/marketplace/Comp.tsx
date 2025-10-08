@@ -102,10 +102,10 @@ export default function Comp() {
                 (range) => (
                   <Button
                     key={range}
-                    size="sm"
+                    size="lg"
                     variant="ghost"
                     className={cn(
-                      "uppercase !text-xs sm:!text-sm !font-bold px-4 sm:px-6 py-2 rounded-md text-white border border-brand hover:text-white hover:bg-white/10 transition-all duration-200",
+                      "uppercase !text-xs sm:!text-sm !font-bold px-4 sm:px-6 !py-4 !h-auto rounded-md text-white border border-brand hover:text-white hover:bg-white/10 transition-all duration-200",
                       selectedRange === range &&
                         "bg-brand text-dark font-semibold shadow-sm"
                     )}
@@ -121,7 +121,7 @@ export default function Comp() {
                 variant="ghost"
                 onClick={() => handleRangeClick("ALL")}
                 className={cn(
-                  "uppercase !text-xs sm:!text-sm !font-bold px-4 sm:px-6 py-2 rounded-md text-white border border-brand hover:text-white hover:bg-white/10 transition-all duration-200",
+                  "uppercase !text-xs sm:!text-sm !font-bold px-4 sm:px-6 !py-4 !h-auto rounded-md text-white border border-brand hover:text-white hover:bg-white/10 transition-all duration-200",
                   showAllRanges && "bg-brand text-dark font-semibold shadow-sm"
                 )}
               >
@@ -153,7 +153,7 @@ export default function Comp() {
                   stroke="#aaa"
                   tick={{
                     fill: "#fff",
-                    fontSize: 12,
+                    fontSize: 16,
                     fontWeight: 600,
                     dy: 20,
                   }}
@@ -164,7 +164,7 @@ export default function Comp() {
                   stroke="#aaa"
                   tick={{
                     fill: "#00FFAE",
-                    fontSize: 12,
+                    fontSize: 16,
                     fontWeight: 600,
                     dx: -10,
                   }}

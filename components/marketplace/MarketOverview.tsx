@@ -230,7 +230,7 @@ export default function MarketOverview() {
                                 asChild
                                 variant="link"
                                 size="lg"
-                                className="w-full bg-brand rounded-lg h-auto py-4 text-sm text-dark font-medium hover:bg-brand/80"
+                                className="w-full bg-brand rounded-lg h-auto py-4 text-sm text-dark font-medium hover:no-underline hover:bg-brand/80"
                             >
                                 <Link href={`/bid/${card.id}`}>Bid Now</Link>
                             </Button>

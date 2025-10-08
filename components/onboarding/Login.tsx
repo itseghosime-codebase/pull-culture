@@ -44,18 +44,18 @@ export function Login({
                 onInteractOutside={(e) => e.preventDefault()}
                 onEscapeKeyDown={(e) => e.preventDefault()}
             >
-                <DialogHeader className="items-center gap-3 border-b-2 pb-4 mb-2 border-brand">
+                <DialogHeader className="items-center gap-5 border-b-2 pb-4 mb-2 border-brand">
                     <Image
                         src={"/assets/logo/pull_culture.svg"}
                         alt="Logo"
-                        width={280}
-                        height={70}
-                        className="mx-auto"
+                        width={400}
+                        height={100}
+                        className="mx-auto w-auto h-16 md:h-20 lg:h-24"
                     />
-                    <DialogTitle className="uppercase px-5 py-4 text-4xl font-black text-black bg-brand w-fit">
+                    <DialogTitle className="uppercase px-5 py-4 text-2xl md:text-3xl lg:text-4xl font-black text-black bg-brand w-fit">
                         LOGIN
                     </DialogTitle>
-                    <DialogDescription className="font-bold text-lg text-[#A9A9A9]">
+                    <DialogDescription className="font-bold text-base md:text-lg text-[#A9A9A9]">
                         Not registered?{" "}
                         <Button
                             onClick={() => {
@@ -63,7 +63,7 @@ export function Login({
                                 onSwitchToSignup?.()
                             }}
                             variant="ghost"
-                            className="text-brand underline !text-lg px-0 hover:bg-transparent hover:text-brand/80 transition underline-offset-4 focus-visible:ring-0 font-bold"
+                            className="text-brand underline md:!text-lg px-0 hover:bg-transparent hover:text-brand/80 transition underline-offset-4 focus-visible:ring-0 font-bold"
                         >
                             Sign Up
                         </Button>

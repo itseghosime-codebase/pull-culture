@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Banner() {
     return (
-        <section className='h-48 md:h-60 lg:h-72 max-h-80 relative'>
+        <section className='h-52 md:h-64 lg:h-80 relative'>
             <Image
                 src={'/assets/banners/Banner-img-01.png'}
                 alt='Banner Image'

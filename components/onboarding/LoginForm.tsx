@@ -102,7 +102,7 @@ export default function LoginForm() {
                         <Button
                             type="button"
                             variant="link"
-                            className="text-brand text-lg font-semibold underline hover:text-white underline-offset-4 transition"
+                            className="text-brand text-base md:text-lg font-semibold underline hover:text-white underline-offset-4 transition"
                             onClick={() => console.log("Forgot password clicked")}
                         >
                             Forgot password?

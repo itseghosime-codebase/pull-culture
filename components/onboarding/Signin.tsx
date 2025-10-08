@@ -42,18 +42,18 @@ export function Signin({
                 onInteractOutside={(e) => e.preventDefault()} // prevent closing on background click
                 onEscapeKeyDown={(e) => e.preventDefault()}   // prevent closing on Esc
             >
-                <DialogHeader className="items-center gap-3">
+                <DialogHeader className="items-center gap-5">
                     <Image
                         src={"/assets/logo/pull_culture.svg"}
                         alt="Logo"
-                        width={280}
-                        height={70}
-                        className="mx-auto"
+                        width={400}
+                        height={100}
+                        className="mx-auto w-auto h-16 md:h-20 lg:h-24"
                     />
-                    <DialogTitle className="uppercase px-5 py-4 text-4xl font-black text-black bg-brand w-fit">
+                    <DialogTitle className="uppercase px-5 py-4 text-2xl md:text-3xl lg:text-4xl font-black text-black bg-brand w-fit">
                         SIGN UP
                     </DialogTitle>
-                    <DialogDescription className="font-bold text-lg text-[#A9A9A9]">
+                    <DialogDescription className="font-bold text-base md:text-lg text-[#A9A9A9]">
                         Already registered?{" "}
                         <Button
                             onClick={() => {
@@ -61,7 +61,7 @@ export function Signin({
                                 onSwitchToLogin?.()
                             }}
                             variant="ghost"
-                            className="text-brand underline !text-lg px-0 hover:bg-transparent hover:text-brand/80 transition underline-offset-4 focus-visible:ring-0 font-bold"
+                            className="text-brand underline md:!text-lg px-0 hover:bg-transparent hover:text-brand/80 transition underline-offset-4 focus-visible:ring-0 font-bold"
                         >
                             Log In
                         </Button>

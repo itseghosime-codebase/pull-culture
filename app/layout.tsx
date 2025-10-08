@@ -23,11 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body
-        className={`${inter.variable} antialiased bg-white overflow-hidden`}
+        className={`${inter.variable} antialiased bg-dark`}
       >
         <Announcement />
         {children}
       </body>
-    </html>
+    </html>  
   );
 }

@@ -31,6 +31,7 @@ import React from "react"
 import { useSessionStore } from "@/lib/store/useSessionStore"
 import Authenticated from "./Authenticated"
 import { Button } from "./ui/button"
+import { useAnnouncementStore } from "@/lib/store/announcement-store"
 
 // Navigation links
 const Navigation = [
@@ -51,6 +52,7 @@ export const Categories = [
 
 export function AppSidebar() {
   const { user, checkSession } = useSessionStore();
+  const { isVisible } = useAnnouncementStore()
   const pathname = usePathname()
 
   React.useEffect(() => {
@@ -58,7 +60,7 @@ export function AppSidebar() {
   }, [checkSession]);
 
   return (
-    <Sidebar variant="inset" className="pt-[54px] pr-2.5 pb-0 !border-r-0">
+    <Sidebar variant="inset" className={`${isVisible && 'pt-[50px] lg:pt-[55px]'} transition-all duration-300 pr-2.5 pb-0 !border-r-0`}>
       <div className="bg-dark rounded-tr-4xl py-4 px-5 space-y-4 h-full flex flex-col">
         <SidebarHeader className="items-start">
           <Image
@@ -146,7 +148,7 @@ export function AppSidebar() {
         </SidebarContent>
         {/* ✅ SUBMIT BUTTON */}
         <SidebarFooter>
-          <Button 
+          <Button
             className="mt-auto rounded-full gap-4 bg-brand transition hover:bg-brand/80 text-dark h-12 font-bold text-base flex items-center justify-center"
           >
             Submit Cards

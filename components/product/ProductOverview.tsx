@@ -23,6 +23,8 @@ export default function ProductOverview({ product }: ProductOverviewProps) {
   const { open: isSidebarOpen } = useSidebar()
 
   useEffect(() => {
+    const scrollContainer = document.querySelector('[data-scroll-container]') || window
+
     const handleScroll = () => {
       const productSection = document.getElementById("product-overview")
       if (!productSection) return
@@ -30,9 +32,10 @@ export default function ProductOverview({ product }: ProductOverviewProps) {
       setShowStickyBar(bottom < 150)
     }
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    scrollContainer.addEventListener("scroll", handleScroll)
+    return () => scrollContainer.removeEventListener("scroll", handleScroll)
   }, [])
+
 
   const handleQuantity = (type: "add" | "subtract") => {
     setQuantity((prev) => (type === "add" ? prev + 1 : Math.max(1, prev - 1)))
@@ -81,15 +84,14 @@ export default function ProductOverview({ product }: ProductOverviewProps) {
       <AnimatePresence>
         {showStickyBar && (
           <motion.div
-            initial={{ y: -100, opacity: 0 }}
+            initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -100, opacity: 0 }}
+            exit={{ y: 100, opacity: 0 }}
             transition={{ type: "spring", stiffness: 120, damping: 14 }}
             className={`
-              fixed top-0 right-0 z-50 
+              fixed bottom-0 right-0 z-40 
               bg-card text-white shadow-md
-              w-full ${
-                isSidebarOpen && 'md:w-[calc(100%-18rem)] md:left-[18rem]'
+              w-full ${isSidebarOpen && 'md:w-[calc(100%-18rem)] md:left-[18rem]'
               }
             `}
           >

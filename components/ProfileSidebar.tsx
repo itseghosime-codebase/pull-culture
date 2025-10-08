@@ -31,9 +31,11 @@ import { useSessionStore } from "@/lib/store/useSessionStore"
 import Authenticated from "./Authenticated"
 import { Button } from "./ui/button"
 import { Loader2 } from "lucide-react"
+import { useAnnouncementStore } from "@/lib/store/announcement-store"
 
 export function ProfileSidebar() {
     const { user, checkSession, logout } = useSessionStore()
+    const { isVisible } = useAnnouncementStore()
     const pathname = usePathname()
     const searchParams = useSearchParams()
     const router = useRouter()
@@ -80,7 +82,7 @@ export function ProfileSidebar() {
     }
 
     return (
-        <Sidebar variant="inset" className="pt-[54px] !pb-0 pr-2.5 !border-r-0">
+        <Sidebar variant="inset" className={`${isVisible && 'pt-[50px] lg:pt-[55px]'} transition-all duration-300 pr-2.5 !pb-0 !border-r-0`}>
             <div className="bg-dark rounded-tr-4xl py-6 px-5 space-y-4 h-full overflow-scroll flex flex-col">
                 <SidebarHeader className="items-start">
                     <Image

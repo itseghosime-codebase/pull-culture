@@ -7,7 +7,7 @@ import React from 'react'
 
 export default function ProfilePage() {
   return (
-    <div>
+    <div className='flex-1'>
       <UserDetails />
       <ProfileTabs
         tabs={[

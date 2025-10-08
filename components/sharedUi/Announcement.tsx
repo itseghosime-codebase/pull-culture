@@ -1,7 +1,55 @@
-import React from 'react'
+"use client"
+
+import { X } from "lucide-react"
+import { cn } from "@/lib/utils"
+import { Marquee } from "../ui/marquee"
+import { useAnnouncementStore } from "@/lib/store/announcement-store"
+
+const messages = [
+  "🎉 Free shipping on orders above $100!",
+  "⚡ Flash Sale: Up to 50% off today only!",
+  "💳 Secure payments with Stripe — shop confidently!",
+  "🕒 New arrivals drop every Friday — stay tuned!",
+]
 
 export default function Announcement() {
+  const { isVisible, hideAnnouncement } = useAnnouncementStore()
+
+  if (!isVisible) return null
+
+  // Compute duration dynamically based on number of messages
+  const baseSpeedPerItem = 12 // seconds per message
+  const durationSeconds = messages.length * baseSpeedPerItem
+
   return (
-    <div className='inset-x-0 fixed top-0 z-50 bg-dark py-2 text-center text-brand font-bold h-11 flex items-center justify-center'>ADD ANNOUNCEMENT HERE...</div>
+    <div
+      className={cn(
+        "fixed top-0 inset-x-0 z-[100] h-11 flex items-center justify-between px-4 sm:px-6 bg-dark text-brand font-bold",
+        "border-b border-brand/20"
+      )}
+    >
+      {/* Marquee Section */}
+      <div className="flex-1 overflow-hidden">
+        <Marquee
+          className="flex gap-8 text-sm sm:text-base"
+          style={{ ["--duration" as any]: `${durationSeconds}s` }}
+        >
+          {messages.map((msg, i) => (
+            <span key={i} className="whitespace-nowrap">
+              {msg}
+            </span>
+          ))}
+        </Marquee>
+      </div>
+
+      {/* Close Button */}
+      <button
+        onClick={hideAnnouncement}
+        className="ml-4 flex items-center justify-center text-brand hover:text-brand/80 transition-colors"
+        aria-label="Close announcement"
+      >
+        <X size={20} />
+      </button>
+    </div>
   )
 }

@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <footer className="border-t-2 border-white bg-dark">
       {/* Top Section */}
-      <div className="pt-8 pb-10 max-w-5xl mx-auto px-4 flex flex-col xl:flex-row items-center xl:items-start justify-between gap-8 text-center md:text-left">
+      <div className="pt-8 pb-10 max-w-5xl mx-auto px-4 flex flex-col lg:flex-row flex-wrap items-center justify-between gap-8 text-center md:text-left">
         {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
+        <Link href="/" className="flex-shrink-0 grow">
           <Image
             src="/assets/logo/pull_culture.svg"
             alt="Logo"
@@ -25,7 +25,7 @@ export default function Footer() {
           <Newsletter />
 
         {/* Socials */}
-        <div className="flex flex-col gap-3 items-center md:items-end">
+        <div className="flex flex-col gap-3 items-center lg:items-end grow">
           <h3 className="text-brand text-xl sm:text-2xl font-bold">
             Follow Our Socials
           </h3>
