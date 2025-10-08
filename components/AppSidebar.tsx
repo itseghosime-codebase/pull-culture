@@ -60,7 +60,7 @@ export function AppSidebar() {
   }, [checkSession]);
 
   return (
-    <Sidebar variant="inset" className={`${isVisible && 'pt-[50px] lg:pt-[55px]'} transition-all duration-300 pr-2.5 pb-0 !border-r-0`}>
+    <Sidebar variant="inset" className={`${isVisible && '!pt-[50px] lg:!pt-[55px]'} transition-all duration-300 pr-2.5 pb-0 !border-r-0`}>
       <div className="bg-dark rounded-tr-4xl py-4 px-5 space-y-4 h-full flex flex-col">
         <SidebarHeader className="items-start">
           <Image

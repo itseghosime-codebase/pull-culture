@@ -24,6 +24,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { useAnnouncementStore } from "@/lib/store/announcement-store"
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
@@ -164,6 +165,7 @@ function Sidebar({
   collapsible?: "offcanvas" | "icon" | "none"
 }) {
   const { isMobile, state, openMobile, setOpenMobile } = useSidebar()
+  const { isVisible } = useAnnouncementStore()
 
   if (collapsible === "none") {
     return (
@@ -187,7 +189,7 @@ function Sidebar({
           data-sidebar="sidebar"
           data-slot="sidebar"
           data-mobile="true"
-          className="bg-transparent !border-r-0 text-sidebar-foreground w-(--sidebar-width) p-0 [&>button]:hidden"
+          className={`bg-transparent !border-r-0 text-sidebar-foreground w-(--sidebar-width) p-0 [&>button]:hidden ${isVisible && '!pt-[50px] lg:!pt-[55px]'}`}
           style={
             {
               "--sidebar-width": SIDEBAR_WIDTH_MOBILE,
