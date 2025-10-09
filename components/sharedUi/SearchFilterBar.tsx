@@ -150,7 +150,7 @@ export default function SearchFilterBar({
           <ArrowDownIcon
             className="
               [&svg]:size-4 text-brand transition-transform duration-300
-              group-hover:translate-y-0.5
+              md:group-hover:translate-y-0.5
             "
           />
           <span className="hidden sm:inline">

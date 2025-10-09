@@ -91,7 +91,7 @@ export function TabsSection<T>({
       {/* Tab Content */}
       {tabs.map((tab) => (
         <TabsContent key={tab.title} value={tab.title}>
-          <div className={'grid gap-6 grid-cols-[repeat(auto-fill,minmax(270px,1fr))]'}>
+          <div className={'grid gap-4 md:gap-6 grid-cols-2 lg:grid-cols-[repeat(auto-fill,minmax(270px,1fr))]'}>
             {tab.data.length > 0 ? (
               tab.data.map((item, index) => tab.renderItem(item, index))
             ) : (
