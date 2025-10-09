@@ -22,7 +22,7 @@ export default function Footer() {
         </Link>
 
         {/* Newsletter */}
-          <Newsletter />
+        <Newsletter />
 
         {/* Socials */}
         <div className="flex flex-col gap-3 items-center lg:items-end grow">
@@ -63,7 +63,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-xs sm:text-sm font-bold text-gray-300 text-center md:text-right">
-          © 2025 Pull Culture. All Rights Reserved.
+          © {new Date().getFullYear()} HYP3. All Rights Reserved.
         </p>
       </div>
     </footer>
