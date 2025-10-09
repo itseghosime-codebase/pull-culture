@@ -17,7 +17,7 @@ export default function FeaturedPacks() {
             >
                 {
                     AuctionsDb.slice(0, 10).map((auctions, index) => (
-                        <SwiperSlide className='bg-card rounded-xl overflow-hidden !w-auto' key={index}>
+                        <SwiperSlide className='bg-card rounded-xl overflow-hidden !w-full max-w-[280px]' key={index}>
                             <AuctionsCard {...auctions} />
                         </SwiperSlide>
                     ))}
