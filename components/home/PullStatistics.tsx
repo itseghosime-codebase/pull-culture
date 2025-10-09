@@ -11,7 +11,7 @@ export default function PullStatistics() {
                 bg-card lg:py-6
             ">
                 {/* Header */}
-                <div className="flex flex-col h-full justify-center items-center p-6 lg:py-0 text-center bg-dark/10">
+                <div className="flex flex-col h-full justify-center uppercase items-center p-6 lg:py-0 text-center bg-dark/10">
                     <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
                         Hyp3
                         <span className="block text-brand">Stats</span>
