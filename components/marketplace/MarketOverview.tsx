@@ -52,6 +52,9 @@ export default function MarketOverview() {
     const { open: sidebarOpen } = useSidebar()
     const [loading, setLoading] = useState(true)
 
+    // 👇 Add this state for tracking which side is shown
+    const [viewSide, setViewSide] = useState<"front" | "back">("front")
+
     useEffect(() => {
         const fetchCardData = async () => {
             try {
@@ -84,7 +87,7 @@ export default function MarketOverview() {
                         timeLeft: { days: 4, hours: 7, minutes: 21, seconds: 44 },
                     },
                     imageFront: "/assets/cards/Pack-03.png",
-                    imageBack: "/assets/cards/Pack-03.png",
+                    imageBack: "/assets/cards/Pack-02.png",
                     views: 12,
                 }
 
@@ -101,13 +104,11 @@ export default function MarketOverview() {
         fetchCardData()
     }, [])
 
-    if (loading) {
-        return <SkeletonCard />
-    }
+    if (loading) return <SkeletonCard />
+    if (!card) return <div className="text-center text-red-500">Failed to load card data.</div>
 
-    if (!card) {
-        return <div className="text-center text-red-500">Failed to load card data.</div>
-    }
+    // 👇 Compute current image based on selected side
+    const currentImage = viewSide === "front" ? card.imageFront : card.imageBack
 
     return (
         <div className="py-7 md:pr-10 space-y-7 text-white">
@@ -126,20 +127,38 @@ export default function MarketOverview() {
                 )}
             >
                 {/* Left: Card Image */}
-                <div className={`${!sidebarOpen && 'md:col-span-2'} xl:md:col-span-2 flex flex-col items-center gap-5`}>
+                <div className={`${!sidebarOpen && 'md:col-span-2'} xl:col-span-2 flex flex-col items-center gap-5`}>
                     <Image
-                        src={card.imageFront}
+                        src={currentImage}
                         alt={card.name}
                         width={350}
                         height={600}
+                        priority
                         className="mx-auto h-auto w-full max-w-xs sm:max-w-sm rounded-xl object-contain"
                     />
 
+                    {/* 👇 Interactive buttons */}
                     <div className="flex items-center justify-center gap-3">
-                        <Button className="!text-base px-5 !h-14 font-bold bg-brand text-dark hover:bg-brand/80">
+                        <Button
+                            onClick={() => setViewSide("front")}
+                            className={cn(
+                                "!text-base px-5 !h-14 font-bold border-2",
+                                viewSide === "front"
+                                    ? "bg-brand text-dark border-brand hover:bg-brand/80"
+                                    : "bg-transparent border-brand text-white hover:border-brand/80 hover:text-brand/80"
+                            )}
+                        >
                             View Front
                         </Button>
-                        <Button className="!text-base px-5 font-bold !h-14 bg-transparent border-2 border-brand text-white hover:border-brand/80 hover:text-brand/80">
+                        <Button
+                            onClick={() => setViewSide("back")}
+                            className={cn(
+                                "!text-base px-5 !h-14 font-bold border-2",
+                                viewSide === "back"
+                                    ? "bg-brand text-dark border-brand hover:bg-brand/80"
+                                    : "bg-transparent border-brand text-white hover:border-brand/80 hover:text-brand/80"
+                            )}
+                        >
                             View Back
                         </Button>
                     </div>

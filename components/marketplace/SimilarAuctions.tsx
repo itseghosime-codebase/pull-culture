@@ -16,7 +16,7 @@ export default function SimilarAuctions() {
             >
                 {
                     AuctionsDb.slice(0, 10).map((auctions, index) => (
-                        <SwiperSlide className='bg-card rounded-xl overflow-hidden !w-auto' key={index}>
+                        <SwiperSlide className='bg-card rounded-xl overflow-hidden min-w-64 !w-auto' key={index}>
                             <AuctionsCard {...auctions} />
                         </SwiperSlide>
                     ))}

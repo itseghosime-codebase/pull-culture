@@ -85,7 +85,7 @@ export default function Comp() {
                 setSelectedData(value)
               }
             >
-              <SelectTrigger className="border-2 border-brand gap-7 px-4 !bg-transparent w-full sm:w-auto !text-white !text-base md:!text-lg !h-auto !py-3 font-semibold focus-visible:ring-0">
+              <SelectTrigger className="border-2 border-brand gap-7 px-4 !bg-transparent w-full sm:w-auto !text-white !text-base md:!text-lg !h-12 !py-2 font-semibold focus-visible:ring-0">
                 <SelectValue placeholder="Select Grade" />
                 <RxCaretDown className="text-brand" size={20} />
               </SelectTrigger>
@@ -97,7 +97,7 @@ export default function Comp() {
             </Select>
 
             {/* Time Range Toggle */}
-            <div className="flex flex-wrap gap-2 sm:gap-3">
+            <div className="flex flex-wrap gap-2 sm:gap-3 items-center">
               {[...baseTimeRanges, ...(showAllRanges ? extraTimeRanges : [])].map(
                 (range) => (
                   <Button
@@ -105,7 +105,7 @@ export default function Comp() {
                     size="lg"
                     variant="ghost"
                     className={cn(
-                      "uppercase !text-xs sm:!text-sm !font-bold px-4 sm:px-6 !py-4 !h-auto rounded-md text-white border border-brand hover:text-white hover:bg-white/10 transition-all duration-200",
+                      "uppercase !text-xs sm:!text-sm !font-bold px-4 sm:px-6 !py-2 !h-12 rounded-md text-white border border-brand hover:text-white hover:bg-white/10 transition-all duration-200",
                       selectedRange === range &&
                         "bg-brand text-dark font-semibold shadow-sm"
                     )}
@@ -121,7 +121,7 @@ export default function Comp() {
                 variant="ghost"
                 onClick={() => handleRangeClick("ALL")}
                 className={cn(
-                  "uppercase !text-xs sm:!text-sm !font-bold px-4 sm:px-6 !py-4 !h-auto rounded-md text-white border border-brand hover:text-white hover:bg-white/10 transition-all duration-200",
+                  "uppercase !text-xs sm:!text-sm !font-bold px-4 sm:px-6 !py-2 !h-12 rounded-md text-white border border-brand hover:text-white hover:bg-white/10 transition-all duration-200",
                   showAllRanges && "bg-brand text-dark font-semibold shadow-sm"
                 )}
               >
