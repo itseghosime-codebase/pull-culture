@@ -47,12 +47,12 @@ export default function ListingType() {
             reserve_price: "",
             fixed_price: "",
             listing_price: "",
-            auction_duration: "24HRS",
+            auction_duration: "24 HRS",
         },
         mode: "onChange",
     })
 
-    const durationOptions = ["1HR", "2HRS", "4HRS", "12HRS", "24HRS", "48HRS"]
+    const durationOptions = ["24 HRS", "2 DAYS", "3 DAYS", "4 DAYS", "5 DAYS", "7 DAYS"]
 
     const onSubmit = (values: FormValues) => {
         // Manual validation logic based on listType
@@ -193,7 +193,7 @@ export default function ListingType() {
                                     <FormItem>
                                         <FormLabel className="font-bold">Auction Duration:</FormLabel>
                                         <FormControl>
-                                            <Select onValueChange={field.onChange} defaultValue={field.value || "24HRS"}>
+                                            <Select onValueChange={field.onChange} defaultValue={field.value || "24 HRS"}>
                                                 <SelectTrigger className="w-full min-w-32 max-w-40 !h-12 bg-white text-dark text-base">
                                                     <SelectValue />
                                                     <ChevronDownIcon className="size-6 text-dark" />
