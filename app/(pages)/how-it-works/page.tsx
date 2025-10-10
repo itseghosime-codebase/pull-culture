@@ -61,6 +61,7 @@ export default function HowItWorksPage() {
         <Image
           src={'/assets/logo/how-it-works.svg'}
           alt='HYP3?'
+          draggable={false}
           width={667.09}
           height={148.31}
           className='mx-auto h-16 md:h-24 lg:h-32 xl:h-36 w-auto'
