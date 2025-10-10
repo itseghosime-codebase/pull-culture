@@ -11,6 +11,7 @@ export interface TabSection<T> {
   title: string;
   data: T[];
   renderItem: (item: T, index: number) => React.ReactNode;
+  searchFilter?: React.ReactNode;
 }
 
 interface TabSectionProps<T> {
@@ -84,7 +85,8 @@ function ProfileTabsInner<T>({ tabs, defaultTab }: TabSectionProps<T>) {
       {/* Tab Contents */}
       {tabs.map((tab) => (
         <TabsContent key={tab.title} value={tab.title}>
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-4">
+          {tab.searchFilter && <div className="mb-4">{tab.searchFilter}</div>}
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-5">
             {tab.data.length > 0 ? (
               tab.data.map((item, index) => tab.renderItem(item, index))
             ) : (

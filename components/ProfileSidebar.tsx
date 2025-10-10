@@ -164,10 +164,11 @@ export function ProfileSidebar() {
                             <SidebarMenuItem>
                                 <SidebarMenuButton
                                     asChild
+                                    isActive={isActive(`/profile/${user?.username}/sellerhub`)}
                                     size="lg"
                                     className="h-10 [&>svg]:w-6 [&>svg]:h-auto transition hover:bg-transparent hover:text-brand px-0"
                                 >
-                                    <Link href="/" className="flex gap-3 items-center">
+                                    <Link href={`/profile/${user?.username}/sellerhub`} className="flex gap-3 items-center">
                                         <SellerIcon />
                                         <span className="font-bold text-base">Seller Hub</span>
                                     </Link>
