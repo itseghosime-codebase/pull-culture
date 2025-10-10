@@ -56,7 +56,7 @@ export default function SearchFilterBar({
   }
 
   return (
-    <div className="w-full flex items-center gap-3 sm:gap-4 p-3 sm:p-4">
+    <div className="w-full flex items-center gap-3 sm:gap-4">
       {/* Search Input */}
       <div
         className="

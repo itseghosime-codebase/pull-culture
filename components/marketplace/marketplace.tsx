@@ -22,7 +22,9 @@ export default function Marketplace() {
 
     return (
         <section>
-            <SearchFilterBar categories={categories} onChange={handleFilterChange} />
+            <div className="p-3 sm:p-4">
+                <SearchFilterBar categories={categories} onChange={handleFilterChange} />
+            </div>
             <TabsSection
                 tabs={[
                     {
