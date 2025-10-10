@@ -31,6 +31,8 @@ import ListIcon from './listIcon.svg'
 import PackPulledIcon from './pack-pulled-icon.svg'
 import ShippingIcon from './shippingicon.svg'
 import UserBold from './usersbold.svg'
+import GiftIcon from './giftIcon.svg'
+import OpenPack from './openPack.svg'
 
 export {
     SignInIcon,
@@ -65,5 +67,7 @@ export {
     ListIcon,
     PackPulledIcon,
     ShippingIcon,
-    UserBold
+    UserBold,
+    GiftIcon,
+    OpenPack
 }

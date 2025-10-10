@@ -1,10 +1,25 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import Newsletter from './sharedUi/Newsletter'
-import { BsInstagram, BsTiktok, BsTwitterX } from 'react-icons/bs'
+"use client"
+
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
+import Newsletter from "./sharedUi/Newsletter"
+import { BsInstagram, BsTiktok, BsTwitterX } from "react-icons/bs"
+import FeedbackDialog from "./FeedbackDialog"
 
 export default function Footer() {
+  const footerLinks = [
+    { label: "Home", href: "/" },
+    { label: "About", href: "" },
+    { label: "News", href: "" },
+    { label: "Contact", href: "" },
+    { label: "Feedback", href: "" }, // placeholder, replaced below
+    { label: "FAQ", href: "" },
+    { label: "Provably Fair", href: "" },
+    { label: "Terms", href: "" },
+    { label: "Privacy", href: "" },
+  ]
+
   return (
     <footer className="border-t-2 border-white bg-dark">
       {/* Top Section */}
@@ -30,15 +45,9 @@ export default function Footer() {
             Follow Our Socials
           </h3>
           <div className="flex items-center gap-6 text-white text-2xl">
-            <Link href="#" className="hover:text-brand transition-colors">
-              <BsInstagram />
-            </Link>
-            <Link href="#" className="hover:text-brand transition-colors">
-              <BsTwitterX />
-            </Link>
-            <Link href="#" className="hover:text-brand transition-colors">
-              <BsTiktok />
-            </Link>
+            <SocialLink icon={<BsInstagram />} />
+            <SocialLink icon={<BsTwitterX />} />
+            <SocialLink icon={<BsTiktok />} />
           </div>
         </div>
       </div>
@@ -50,15 +59,13 @@ export default function Footer() {
       <div className="py-6 px-4 max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-4">
         {/* Links */}
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6">
-          {FooterLinks.map((link, index) => (
-            <Link
-              href={link.href}
-              key={index}
-              className="text-sm text-white font-medium hover:text-brand transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {footerLinks.map((link, index) =>
+            link.label === "Feedback" ? (
+              <FeedbackDialog key={index} />
+            ) : (
+              <FooterLink key={index} {...link} />
+            )
+          )}
         </div>
 
         {/* Copyright */}
@@ -70,14 +77,26 @@ export default function Footer() {
   )
 }
 
-const FooterLinks = [
-  { label: 'Home', href: '' },
-  { label: 'About', href: '' },
-  { label: 'News', href: '' },
-  { label: 'Contact', href: '' },
-  { label: 'Feedback', href: '' },
-  { label: 'FAQ', href: '' },
-  { label: 'Provably Fair', href: '' },
-  { label: 'Terms', href: '' },
-  { label: 'Privacy', href: '' },
-]
+// ===================
+// Helper Components
+// ===================
+
+function SocialLink({ icon }: { icon: React.ReactNode }) {
+  return (
+    <Link href="#" className="hover:text-brand transition-colors">
+      {icon}
+    </Link>
+  )
+}
+
+function FooterLink({ label, href }: { label: string; href: string }) {
+  return (
+    <Link
+      href={href || "#"}
+      className="text-sm text-white font-medium hover:text-brand transition-colors"
+    >
+      {label}
+    </Link>
+  )
+}
+

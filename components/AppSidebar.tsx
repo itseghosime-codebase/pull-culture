@@ -135,7 +135,7 @@ export function AppSidebar() {
                   size="lg"
                   className="h-10 [&>svg]:size-7 hover:bg-transparent transition hover:text-brand px-0"
                 >
-                  <Link href={'how-it-works'} className="flex gap-3 items-center">
+                  <Link href={'/how-it-works'} className="flex gap-3 items-center">
                     <CheckIcon />
                     <span className="font-bold text-base">How It Works?</span>
                   </Link>
