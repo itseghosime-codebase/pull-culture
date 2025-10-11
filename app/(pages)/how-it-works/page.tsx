@@ -1,3 +1,4 @@
+import Faq from '@/components/how-it-works.tsx/Faq'
 import { GiftIcon, OpenPack, PackPulledIcon, ShippingIcon } from '@/Icons/Index'
 import Image from 'next/image'
 import React from 'react'
@@ -114,6 +115,11 @@ export default function HowItWorksPage() {
           <p key={i}>{p}</p>
         ))}
       </div>
+
+      <Divider />
+
+      {/* Faq */}
+      <Faq />
     </div>
   )
 }

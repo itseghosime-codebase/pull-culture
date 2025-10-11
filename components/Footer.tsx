@@ -15,7 +15,7 @@ export default function Footer() {
      { label: "FAQ", href: "" },
     { label: "Support", href: "" },
     { label: "Feedback", href: "" }, // placeholder, replaced below
-    { label: "Shipping", href: "" },
+    { label: "Shipping", href: "/shipping" },
     { label: "Provably Fair", href: "" },
     { label: "Terms", href: "/terms-of-service" },
     { label: "Privacy", href: "/privacy-policy" },
