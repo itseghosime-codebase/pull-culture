@@ -10,11 +10,12 @@ import FeedbackDialog from "./FeedbackDialog"
 export default function Footer() {
   const footerLinks = [
     { label: "Home", href: "/" },
-    { label: "About", href: "" },
+    { label: "Packs", href: "/pack" },
     { label: "News", href: "" },
-    { label: "Contact", href: "" },
+     { label: "FAQ", href: "" },
+    { label: "Support", href: "" },
     { label: "Feedback", href: "" }, // placeholder, replaced below
-    { label: "FAQ", href: "" },
+    { label: "Shipping", href: "" },
     { label: "Provably Fair", href: "" },
     { label: "Terms", href: "" },
     { label: "Privacy", href: "" },
