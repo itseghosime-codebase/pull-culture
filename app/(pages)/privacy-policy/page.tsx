@@ -316,7 +316,7 @@ function Section({
       </h4>
 
       {paragraphs &&
-        paragraphs.map((text: any, i: number) => (
+        paragraphs.map((text: string, i: number) => (
           <p key={i} className="font-semibold text-sm md:text-base">
             {text}
           </p>
@@ -324,7 +324,7 @@ function Section({
 
       {bullets && (
         <ul className="list-inside list-disc ml-4">
-          {bullets.map((b: any, i: number) => (
+          {bullets.map((b: string | React.ReactNode, i: number) => (
             <li key={i} className="font-semibold text-sm md:text-base">
               {b}
             </li>
@@ -333,25 +333,34 @@ function Section({
       )}
 
       {items &&
-        items.map((item: any, i: number) => (
-          <div key={i}>
-            <h5 className="text-base md:text-lg lg:text-xl font-extrabold">
-              {item.subtitle}
-            </h5>
-            {item.paragraphs.map((p: string, j: number) => (
-              <p key={j} className="font-semibold text-sm md:text-base">
-                {p}
-              </p>
-            ))}
-            <ul className="list-inside list-disc ml-4">
-              {item.bullets.map((b: string, k: number) => (
-                <li key={k} className="font-semibold text-sm md:text-base">
-                  {b}
-                </li>
+        items.map(
+          (
+            item: {
+              subtitle: string
+              paragraphs: string[]
+              bullets: string[]
+            },
+            i: number
+          ) => (
+            <div key={i}>
+              <h5 className="text-base md:text-lg lg:text-xl font-extrabold">
+                {item.subtitle}
+              </h5>
+              {item.paragraphs.map((p: string, j: number) => (
+                <p key={j} className="font-semibold text-sm md:text-base">
+                  {p}
+                </p>
               ))}
-            </ul>
-          </div>
-        ))}
+              <ul className="list-inside list-disc ml-4">
+                {item.bullets.map((b: string, k: number) => (
+                  <li key={k} className="font-semibold text-sm md:text-base">
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        )}
 
       {extra && extra}
     </section>
@@ -381,7 +390,7 @@ function SimpleSection({
       )}
       {bullets && (
         <ul className="list-inside list-disc ml-4">
-          {bullets.map((b: any, i: number) => (
+          {bullets.map((b: string | React.ReactNode, i: number) => (
             <li key={i} className="font-semibold text-sm md:text-base">
               {b}
             </li>
