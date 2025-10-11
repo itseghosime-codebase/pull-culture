@@ -290,7 +290,25 @@ function Divider() {
   return <div className="h-0.5 w-full bg-brand" />
 }
 
-function Section({ id, title, paragraphs, bullets, items, extra }: any) {
+function Section({
+  id,
+  title,
+  paragraphs,
+  bullets,
+  items,
+  extra,
+}: {
+  id: string
+  title: string
+  paragraphs?: string[]
+  bullets?: (string | React.ReactNode)[]
+  items?: {
+    subtitle: string
+    paragraphs: string[]
+    bullets: string[]
+  }[]
+  extra?: React.ReactNode
+}) {
   return (
     <section id={id} className="space-y-4">
       <h4 className="text-lg md:text-xl lg:text-2xl font-black text-brand">
@@ -340,7 +358,17 @@ function Section({ id, title, paragraphs, bullets, items, extra }: any) {
   )
 }
 
-function SimpleSection({ id, title, text, bullets }: any) {
+function SimpleSection({
+  id,
+  title,
+  text,
+  bullets,
+}: {
+  id: string
+  title: string
+  text: string | React.ReactNode
+  bullets?: (string | React.ReactNode)[]
+}) {
   return (
     <section id={id} className="space-y-4">
       <h4 className="text-lg md:text-xl lg:text-2xl font-black text-brand">
