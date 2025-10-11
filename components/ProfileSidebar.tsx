@@ -46,7 +46,7 @@ export function ProfileSidebar() {
     // Navigation links
     const Navigation = [
         { title: "View Profile", href: `/profile/${user?.username}`, icon: UserIcon },
-        { title: "Wallet", href: "/", icon: WalletIcon },
+        { title: "Wallet", href: `/profile/${user?.username}/settings`, tab: "Wallet", icon: WalletIcon },
         { title: "Recent Orders", href: `/profile/${user?.username}`, tab: "Recent Activity", icon: TransactionIcon }
     ]
 

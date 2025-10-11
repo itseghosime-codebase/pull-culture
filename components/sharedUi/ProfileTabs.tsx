@@ -38,6 +38,16 @@ function ProfileTabsInner<T>({ tabs, defaultTab }: TabSectionProps<T>) {
     }
   }, [activeTab, tabs]);
 
+  // ✅ Only scroll when the URL actually includes a tab query param
+  React.useEffect(() => {
+    if (!tabParam) return
+
+    const activeContent = document.querySelector(`[data-state="active"]`)
+    if (activeContent) {
+      activeContent.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }, [activeTab, tabParam])
+
   // update active tab if query param changes
   React.useEffect(() => {
     if (tabParam && tabParam !== activeTab) {

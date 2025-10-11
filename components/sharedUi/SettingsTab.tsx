@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { motion } from "framer-motion"
+import { useSearchParams, useRouter } from "next/navigation"
 import {
     Tabs,
     TabsContent,
@@ -19,11 +20,32 @@ interface TabSectionProps {
 }
 
 export function SettingsTabs({ tabs, defaultTab }: TabSectionProps) {
-    const [activeTab, setActiveTab] = React.useState(defaultTab || tabs[0]?.title)
+    const searchParams = useSearchParams()
+    const router = useRouter()
+    const urlTab = searchParams.get("tab")
+    const [activeTab, setActiveTab] = React.useState(urlTab || defaultTab || tabs[0]?.title)
     const tabRefs = React.useRef<Record<string, HTMLButtonElement | null>>({})
     const [indicatorStyle, setIndicatorStyle] = React.useState({ left: 0, width: 0 })
 
-    // ✅ Update animated underline when tab changes or window resizes
+    // ✅ Sync URL param -> tab
+    React.useEffect(() => {
+        if (urlTab && urlTab !== activeTab) {
+            setActiveTab(urlTab)
+        }
+    }, [urlTab])
+
+    // ✅ Only scroll when the URL actually includes a tab query param
+    React.useEffect(() => {
+        if (!urlTab) return
+
+        const activeContent = document.querySelector(`[data-state="active"]`)
+        if (activeContent) {
+            activeContent.scrollIntoView({ behavior: "smooth", block: "start" })
+        }
+    }, [activeTab, urlTab])
+
+
+    // ✅ Update underline animation
     React.useEffect(() => {
         const updateIndicator = () => {
             const el = tabRefs.current[activeTab || ""]
@@ -38,17 +60,23 @@ export function SettingsTabs({ tabs, defaultTab }: TabSectionProps) {
         return () => window.removeEventListener("resize", updateIndicator)
     }, [activeTab, tabs])
 
+    // ✅ Update URL when switching tabs manually
+    const handleTabChange = (val: string) => {
+        setActiveTab(val)
+        const params = new URLSearchParams(window.location.search)
+        params.set("tab", val)
+        router.replace(`?${params.toString()}`, { scroll: false })
+    }
+
     return (
         <Tabs
-            defaultValue={defaultTab || tabs[0]?.title}
-            onValueChange={(val) => setActiveTab(val)}
+            defaultValue={activeTab}
+            value={activeTab}
+            onValueChange={handleTabChange}
             className="w-full pb-6 space-y-5"
         >
-            {/* === Tab Headers === */}
             <div className="relative border-b border-white/30 overflow-x-auto overflow-y-hidden scrollbar-none">
-                <TabsList
-                    className="flex items-center justify-start sm:justify-center gap-2 sm:gap-4 h-auto rounded-none bg-transparent px-2 sm:px-0 min-w-max"
-                >
+                <TabsList className="flex items-center justify-start sm:justify-center gap-2 sm:gap-4 h-auto rounded-none bg-transparent px-2 sm:px-0 min-w-max">
                     {tabs.map((tab) => (
                         <TabsTrigger
                             key={tab.title}
@@ -64,19 +92,14 @@ export function SettingsTabs({ tabs, defaultTab }: TabSectionProps) {
                     ))}
                 </TabsList>
 
-                {/* === Animated Active Line === */}
                 <motion.div
                     layout
                     transition={{ type: "spring", stiffness: 400, damping: 30 }}
                     className="absolute z-10 -bottom-[2px] h-1 bg-brand rounded-full"
-                    style={{
-                        left: indicatorStyle.left,
-                        width: indicatorStyle.width,
-                    }}
+                    style={{ left: indicatorStyle.left, width: indicatorStyle.width }}
                 />
             </div>
 
-            {/* === Tab Content === */}
             <div className="px-2 sm:px-4 md:px-0">
                 {tabs.map((tab) => (
                     <TabsContent key={tab.title} value={tab.title}>
