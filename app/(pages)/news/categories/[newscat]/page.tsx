@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react"
 import { notFound } from "next/navigation"
-import Image from "next/image"
 import Link from "next/link"
 import { FaChevronLeft } from "react-icons/fa"
 import { NewsMockData } from "@/context/Content"

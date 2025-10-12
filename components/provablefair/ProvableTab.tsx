@@ -11,7 +11,7 @@ import {
 import { cn } from "@/lib/utils"
 import { useSidebar } from "../ui/sidebar"
 
-interface TabSectionProps<T> {
+interface TabSectionProps {
     tabs: {
         title: string
         renderItem: () => React.ReactNode
@@ -19,10 +19,10 @@ interface TabSectionProps<T> {
     defaultTab?: string
 }
 
-export function ProvableTab<T>({
+export function ProvableTab({
     tabs,
     defaultTab
-}: TabSectionProps<T>) {
+}: TabSectionProps) {
     const [activeTab, setActiveTab] = React.useState(defaultTab || tabs[0]?.title)
     const tabRefs = React.useRef<Record<string, HTMLButtonElement | null>>({})
     const [indicatorStyle, setIndicatorStyle] = React.useState({ left: 0, width: 0 })

@@ -32,7 +32,7 @@ export function SettingsTabs({ tabs, defaultTab }: TabSectionProps) {
         if (urlTab && urlTab !== activeTab) {
             setActiveTab(urlTab)
         }
-    }, [urlTab])
+    }, [urlTab, activeTab])
 
     // ✅ Only scroll when the URL actually includes a tab query param
     React.useEffect(() => {

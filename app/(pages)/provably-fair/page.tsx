@@ -52,6 +52,7 @@ function RecentSales() {
             {Recents.length > 0 ? (
                 Recents.map((item, index) => (
                     <div
+                        key={index}
                         className={`bg-card rounded-xl overflow-hidden transition-all duration-300`}
                     >
                         <RecentCard {...item} provablyFair />
