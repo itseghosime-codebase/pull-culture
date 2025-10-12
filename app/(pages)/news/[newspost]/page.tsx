@@ -8,8 +8,9 @@ import SectionHeader from "@/components/sharedUi/SectionHeader"
 import SimilarArticles from "@/components/news/SimilarArticle"
 
 
-export default function NewsPostPage({ params }: { params: { newspost: string } }) {
-    const decodedTitle = decodeURIComponent(params.newspost)
+export default function NewsPostPage({ params }: { params: Promise<{ newspost: string }> }) {
+    const { newspost } = React.use(params)
+    const decodedTitle = decodeURIComponent(newspost)
     const post = NewsMockData.find(news => news.title === decodedTitle)
 
     if (!post) return notFound()
