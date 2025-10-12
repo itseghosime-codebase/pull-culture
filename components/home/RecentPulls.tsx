@@ -18,7 +18,7 @@ export default function RecentPulls() {
                     className="mySwiper"
                 >
                     {RecentPacks.map((recents, index) => (
-                        <SwiperSlide className='bg-card rounded-xl overflow-hidden !w-fit' key={index}>
+                        <SwiperSlide className='bg-card rounded-xl overflow-hidden !w-full max-w-[270px]' key={index}>
                             <PullsCard {...recents} />
                         </SwiperSlide>
                     ))}

@@ -134,175 +134,200 @@ const RecentPacks = [{
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     createdAt: '2016 Pokémon',
     packName: 'Pokémon Ember Pack',
     hitChance: 0.5,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }]
 
 const Packs = [{
@@ -413,259 +438,296 @@ const Recents = [{
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }, {
     imageSrc: '/assets/cards/Pack-02.png',
     title: 'Baseball Ember Pack',
     pack: '2000 Pokémon Gym Heroes',
     rank: '#59 - 1st Edition - PSA 10 GEM MINT',
     price: 120,
-    timeStamp: '3 minutes ago'
+    timeStamp: '3 minutes ago',
+    owner: 'Steezy'
 }]
 
 const leaderboardDemoData = Array.from({ length: 50 }, (_, i) => ({

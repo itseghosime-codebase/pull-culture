@@ -12,6 +12,8 @@ interface RecentCardProps {
   price?: number;
   onViewSale?: () => void;
   isLoading?: boolean;
+  provablyFair?: boolean;
+  owner?: string;
 }
 
 export default function RecentCard({
@@ -23,6 +25,8 @@ export default function RecentCard({
   timeStamp,
   onViewSale,
   isLoading = false,
+  provablyFair,
+  owner
 }: RecentCardProps) {
   return (
     <div
@@ -47,7 +51,7 @@ export default function RecentCard({
       </div>
 
       {/* Text Content */}
-      <div className="flex flex-col justify-between flex-grow h-full py-3">
+      <div className="flex flex-col justify-between flex-grow h-full pt-3">
         <div className="text-xs font-medium text-white px-4 space-y-1">
           {isLoading ? (
             <>
@@ -64,7 +68,17 @@ export default function RecentCard({
           )}
         </div>
 
-        <div className="h-0.5 bg-brand/80 my-1 mx-4 rounded-full" />
+        <div className="px-4 mt-1">
+          {
+            provablyFair && !isLoading && (
+              <div className="border-t-2 border-brand text-xs py-0.5">
+                <p>Buyer: <strong className="text-brand">@{owner}</strong></p>
+              </div>
+            )
+          }
+        </div>
+
+        <div className="h-0.5 bg-brand mb-1 mx-4 rounded-full" />
 
         <div className="flex items-center justify-between px-4">
           {isLoading ? (
@@ -79,6 +93,8 @@ export default function RecentCard({
             </>
           )}
         </div>
+
+
 
         {isLoading ? (
           <Skeleton className="w-full rounded-tl-lg rounded-br-lg py-2 mt-1" />

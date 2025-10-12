@@ -11,6 +11,8 @@ interface PullCardProps {
   packName: string
   hitChance: number
   timeStamp: string
+  owner?: string
+  provablyFair?: boolean
 }
 
 export default function PullsCard({
@@ -20,6 +22,8 @@ export default function PullsCard({
   packName,
   hitChance,
   timeStamp,
+  owner,
+  provablyFair
 }: PullCardProps) {
   const [loading, setLoading] = useState(true)
 
@@ -31,7 +35,7 @@ export default function PullsCard({
 
   if (loading) {
     return (
-      <div className="h-auto w-56 lg:w-60 xl:w-[280px] space-y-3">
+      <div className="h-auto w-full space-y-3">
         <div className="flex items-center justify-center pt-6">
           <Skeleton className="h-48 w-36 md:w-44 lg:w-48 rounded-lg" />
         </div>
@@ -48,7 +52,7 @@ export default function PullsCard({
   }
 
   return (
-    <div className="h-auto w-56 lg:w-60 xl:w-[280px]">
+    <div className="h-auto w-full">
       <div className="flex items-center justify-center pt-6">
         <Image
           src={imageSrc}
@@ -61,7 +65,17 @@ export default function PullsCard({
       <div className="p-4 text-white font-medium">
         <h5 className="text-sm font-bold">{title}</h5>
         <h6 className="text-sm">{createdAt}</h6>
-        <div className="h-0.5 bg-brand my-2" />
+        <div className="mt-2">
+          {
+            provablyFair && (
+              <div className="border-t-2 border-brand text-xs py-1">
+                <p>Pulled By: <strong className="text-brand">@{owner}</strong></p>
+              </div>
+            )
+          }
+        </div>
+
+        <div className="h-0.5 bg-brand mb-2 rounded-full" />
         <div className="text-xs space-y-1">
           <h5>{packName}</h5>
           <p className="text-brand">{hitChance}% Hit Chance</p>
