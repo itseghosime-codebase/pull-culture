@@ -8,6 +8,7 @@ import { FaChevronLeft } from "react-icons/fa"
 import { NewsMockData } from "@/context/Content"
 import SectionHeader from "@/components/sharedUi/SectionHeader"
 import { Skeleton } from "@/components/ui/skeleton"
+import ArticlesCard from "@/components/news/ArticlesCard"
 
 
 interface Props {
@@ -61,30 +62,7 @@ export default function NewsCategoryPage({ params }: Props) {
             {/* News Grid */}
             <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6">
                 {filteredPosts.map((post, index) => (
-                    <div key={index} className="overflow-hidden">
-                        <Image
-                            src={post.imgUrl}
-                            alt={post.imgalt}
-                            width={400}
-                            height={250}
-                            className="w-full h-56 object-cover"
-                        />
-                        <div className="pt-3 space-y-3">
-                            <Link
-                                href={`/news/${post.title}`}
-                                className="hover:opacity-80 transition block"
-                            >
-                                <h3 className="text-base lg:text-lg font-black text-brand">
-                                    {post.title}
-                                </h3>
-                            </Link>
-                            <div className="flex items-center justify-start text-xs gap-2 font-semibold text-white flex-wrap">
-                                <span className="text-brand">{post.type}</span>
-                                <span>| {post.date}</span>
-                                <span>| {post.timeToRead}</span>
-                            </div>
-                        </div>
-                    </div>
+                    <ArticlesCard key={index} news={post} />
                 ))}
             </div>
         </div>

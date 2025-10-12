@@ -789,7 +789,7 @@ const NewsMockData = [
             ]
         }
     }, {
-        title: '10 Best Pikachu Pokémon Cards You Need to Collect',
+        title: '11 Best Pikachu Pokémon Cards You Need to Collect',
         type: 'Pokémon',
         date: 'October 10, 2025',
         imgUrl: '/assets/news/news-02.png',
@@ -891,7 +891,7 @@ const NewsMockData = [
             ]
         }
     }, {
-        title: '10 Best Pikachu Pokémon Cards You Need to Collect',
+        title: '12 Best Pikachu Pokémon Cards You Need to Collect',
         type: 'Pokémon',
         date: 'October 10, 2025',
         imgUrl: '/assets/news/news-02.png',
@@ -925,7 +925,7 @@ const NewsMockData = [
             ]
         }
     }, {
-        title: 'The King of Collectibles Shares the Secrets to Building the Ultimate Collection',
+        title: 'The Queen of Collectibles Shares the Secrets to Building the Ultimate Collection',
         type: 'Sports',
         date: 'October 10, 2025',
         imgUrl: '/assets/news/news-03.png',
@@ -959,7 +959,7 @@ const NewsMockData = [
             ]
         }
     }, {
-        title: "Best Star Wars Trading Card Sets to Celebrate Lucasfilm's 50th Anniversary",
+        title: "Best of Star Wars Trading Card Sets to Celebrate Lucasfilm's 50th Anniversary",
         type: 'Trading Cards',
         date: 'October 10, 2025',
         imgUrl: '/assets/news/news-04.png',
@@ -993,7 +993,7 @@ const NewsMockData = [
             ]
         }
     }, {
-        title: '10 Best Pikachu Pokémon Cards You Need to Collect',
+        title: '16 Best Pikachu Pokémon Cards You Need to Collect',
         type: 'Pokémon',
         date: 'October 10, 2025',
         imgUrl: '/assets/news/news-02.png',
@@ -1027,7 +1027,7 @@ const NewsMockData = [
             ]
         }
     }, {
-        title: 'The King of Collectibles Shares the Secrets to Building the Ultimate Collection',
+        title: 'The Kings of Collectibles Shares the Secrets to Building the Ultimate Collection',
         type: 'Sports',
         date: 'October 10, 2025',
         imgUrl: '/assets/news/news-03.png',
@@ -1061,7 +1061,7 @@ const NewsMockData = [
             ]
         }
     }, {
-        title: "Best Star Wars Trading Card Sets to Celebrate Lucasfilm's 50th Anniversary",
+        title: "Best Star Wars Trading Cards Sets to Celebrate Lucasfilm's 50th Anniversary",
         type: 'Trading Cards',
         date: 'October 10, 2025',
         imgUrl: '/assets/news/news-04.png',

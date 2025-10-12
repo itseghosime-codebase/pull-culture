@@ -7,6 +7,7 @@ import { useSidebar } from "../ui/sidebar"
 import SectionHeader from "../sharedUi/SectionHeader"
 import { Skeleton } from "../ui/skeleton"
 import Link from "next/link"
+import ArticlesCard from "./ArticlesCard"
 
 export default function NewsRender() {
     const [loading, setLoading] = useState(true)
@@ -45,9 +46,9 @@ export default function NewsRender() {
                         className={`w-full h-full ${sidebarOpen ? "" : "md:col-span-2"} xl:col-span-2 object-cover`}
                     />
                     <div className="text-brand space-y-4">
-                        <Link href={`/news/${featured.title}`} className="hover:opacity-80 transition block"><h2 className="text-4xl lg:text-[40px] 2xl:text-6xl font-black">{featured.title}</h2></Link>
+                        <Link href={`/news/${encodeURIComponent(featured.title)}`} className="hover:opacity-80 transition block"><h2 className="text-4xl lg:text-[40px] 2xl:text-6xl font-black">{featured.title}</h2></Link>
                         <div className="flex items-center justify-start text-xs gap-2 font-semibold text-white flex-wrap">
-                            <Link href={`/news/categories/${featured.type}`} className="hover:opacity-80 transition block"><span className="text-brand">{featured.type}</span></Link>
+                            <Link href={`/news/categories/${encodeURIComponent(featured.type)}`} className="hover:opacity-80 transition block"><span className="text-brand">{featured.type}</span></Link>
                             <span>| {featured.date}</span>
                             <span>| {featured.timeToRead}</span>
                         </div>
@@ -60,23 +61,7 @@ export default function NewsRender() {
                 <SectionHeader headerTitle="Recent News" />
                 <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6">
                     {others.map((news, i) => (
-                        <div key={i} className="overflow-hidden">
-                            <Image
-                                src={news.imgUrl}
-                                alt={news.imgalt}
-                                width={400}
-                                height={250}
-                                className="w-full h-56 object-cover"
-                            />
-                            <div className="pt-3 space-y-3">
-                                <Link href={`/news/${news.title}`} className="hover:opacity-80 transition block"><h3 className="text-base lg:text-lg font-black text-brand">{news.title}</h3></Link>
-                                <div className="flex items-center justify-start text-xs gap-2 font-semibold text-white flex-wrap">
-                                    <Link href={`/news/categories/${news.type}`} className="hover:opacity-80 transition block"><span className="text-brand">{news.type}</span></Link>
-                                    <span>| {news.date}</span>
-                                    <span>| {news.timeToRead}</span>
-                                </div>
-                            </div>
-                        </div>
+                        <ArticlesCard key={i} news={news} />
                     ))}
                 </div>
             </div>
