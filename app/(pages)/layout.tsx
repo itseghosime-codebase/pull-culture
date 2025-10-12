@@ -38,7 +38,7 @@ function SidebarWithInset({ children }: { children: React.ReactNode }) {
       `}
         >
             <div   data-scroll-container
-                className={`overflow-y-auto min-h-screen scroll-smooth bg-dark ${isOpen ? "!rounded-br-none md:!rounded-tl-4xl" : "!rounded-none "}`}>
+                className={`overflow-y-auto scroll-smooth flex-1 bg-dark ${isOpen ? "!rounded-br-none md:!rounded-tl-4xl" : "!rounded-none "}`}>
                 {/* Mobile Top Bar */}
                 <div className="sticky top-0 z-[50] flex items-center justify-between bg-dark/80 backdrop-blur-md px-4 py-3 xl:hidden border-b border-gray-700">
                     <SidebarTrigger className="text-white" />
@@ -46,7 +46,6 @@ function SidebarWithInset({ children }: { children: React.ReactNode }) {
 
                 {/* Main Content */}
                 <div
-                  
                     className={`flex-1 w-full h-full pb-6`}>
                     {children}
                     {/* Footer */}
