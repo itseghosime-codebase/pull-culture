@@ -167,3 +167,7 @@ div {
     @apply bg-background text-foreground;
   }
 }
+
+:target {
+  scroll-margin-top: 50px; /* this sets the offset */
+}

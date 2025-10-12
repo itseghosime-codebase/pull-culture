@@ -23,7 +23,7 @@ export default function Faq() {
     ]
 
     return (
-        <div className='space-y-4'>
+        <div className='space-y-4' id='faq'>
             <div className='text-center font-black'>
                 <h3 className='text-2xl md:text-4xl xl:text-6xl'>FAQ</h3>
                 <h5 className='md:text-lg lg:text-xl xl:text-2xl'>GENERAL QUESTIONS</h5>

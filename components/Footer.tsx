@@ -11,8 +11,8 @@ export default function Footer() {
   const footerLinks = [
     { label: "Home", href: "/" },
     { label: "Packs", href: "/pack" },
-    { label: "News", href: "" },
-     { label: "FAQ", href: "" },
+    { label: "News", href: "/news" },
+     { label: "FAQ", href: "/how-it-works#faq" },
     { label: "Support", href: "" },
     { label: "Feedback", href: "" }, // placeholder, replaced below
     { label: "Shipping", href: "/shipping" },

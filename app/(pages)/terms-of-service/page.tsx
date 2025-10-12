@@ -1,7 +1,14 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
 
+export const metadata: Metadata = {
+  title: "Terms of Service - Pull Culture",
+  description: "description",
+};
+
 export default function TermsPage() {
+  
   return (
     <div className="py-10 px-4 md:px-10 space-y-4">
       {/* HEADER */}
