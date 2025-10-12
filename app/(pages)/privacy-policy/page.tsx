@@ -178,7 +178,7 @@ export default function PrivacyPage() {
               learn more about how Google uses your data at{" "}
               <Link
                 href="https://www.google.com/policies/privacy/partners/"
-                className="text-brand underline underline-offset-2"
+                className="text-brand underline hover:opacity-80 underline-offset-2"
               >
                 https://www.google.com/policies/privacy/partners/
               </Link>
@@ -190,7 +190,7 @@ export default function PrivacyPage() {
               Read Stripe’s Privacy Policy at{" "}
               <Link
                 href="https://stripe.com/privacy"
-                className="text-brand underline underline-offset-2"
+                className="text-brand underline hover:opacity-80 underline-offset-2"
               >
                 https://stripe.com/privacy
               </Link>
@@ -234,7 +234,7 @@ export default function PrivacyPage() {
           <>
             Ad Preferences: In the U.S., opt out of targeted advertising via{" "}
             <Link
-              className="text-brand underline underline-offset-2"
+              className="text-brand underline hover:opacity-80 underline-offset-2"
               href="https://www.aboutads.info/choices"
             >
               aboutads.info/choices
@@ -278,7 +278,7 @@ export default function PrivacyPage() {
             If you have questions or concerns about this Privacy Policy, please
             contact us at{" "}
             <Link
-              className="text-brand underline underline-offset-2"
+              className="text-brand underline hover:opacity-80 underline-offset-2"
               href="mailto:support@hyp3.gg"
             >
               support@hyp3.gg

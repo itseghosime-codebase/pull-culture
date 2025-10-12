@@ -180,7 +180,7 @@ export default function TermsPage() {
         <p className="font-semibold text-sm md:text-base">
           Please review our Privacy Policy at{" "}
           <Link
-            className="text-brand underline underline-offset-2"
+            className="text-brand underline hover:opacity-80 underline-offset-2"
             href={"https://hyp3.gg/privacy"}
           >
             https://hyp3.gg/privacy
@@ -290,7 +290,7 @@ export default function TermsPage() {
           account are personal and non-transferable. You can cancel at any time
           via settings or by emailing{" "}
           <Link
-            className="text-brand underline underline-offset-2"
+            className="text-brand underline hover:opacity-80 underline-offset-2"
             href={"support@hyp3.gg"}
           >
             support@hyp3.gg
@@ -328,7 +328,7 @@ export default function TermsPage() {
           current term ends. Subscription fees are non-refundable (unless
           required by law). If you need help, contact{" "}
           <Link
-            className="text-brand underline underline-offset-2"
+            className="text-brand underline hover:opacity-80 underline-offset-2"
             href={"support@hyp3.gg"}
           >
             support@hyp3.gg
@@ -554,7 +554,7 @@ export default function TermsPage() {
           of alleged copyright infringement to our agent:DMCA Agent —{" "}
           <Link
             href={"mailto:legal@hyp3.gg"}
-            className="text-brand underline underline-offset-2"
+            className="text-brand underline hover:opacity-80 underline-offset-2"
           >
             legal@hyp3.gg
           </Link>
@@ -613,7 +613,7 @@ export default function TermsPage() {
           you or we terminate. You may terminate anytime by closing your account
           (via settings) or emailing{" "}
           <Link
-            className="text-brand underline underline-offset-2"
+            className="text-brand underline hover:opacity-80 underline-offset-2"
             href={"mailto:support@hyp3.gg"}
           >
             support@hyp3.gg
@@ -796,7 +796,7 @@ export default function TermsPage() {
           with questions or complaints at{" "}
           <Link
             href={"mailto:support@hyp3.gg"}
-            className="text-brand underline underline-offset-2"
+            className="text-brand underline hover:opacity-80 underline-offset-2"
           >
             support@hyp3.gg
           </Link>{" "}
@@ -833,7 +833,7 @@ export default function TermsPage() {
         <p className="font-semibold text-sm md:text-base">
           Questions about these Terms? Contact{" "}
           <Link
-            className="text-brand underline underline-offset-2"
+            className="text-brand underline hover:opacity-80 underline-offset-2"
             href={"mailto:support@hyp3.gg"}
           >
             support@hyp3.gg

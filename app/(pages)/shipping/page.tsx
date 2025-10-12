@@ -28,7 +28,7 @@ export default function ShippingPage() {
         </h4>
 
         <p className="font-semibold text-sm md:text-base">
-          We're excited to share our updated fulfillment windows:
+          We&apos;re excited to share our updated fulfillment windows:
         </p>
 
         <ul className="list-inside list-disc ml-4">
@@ -43,7 +43,7 @@ export default function ShippingPage() {
         </ul>
 
         <p className="font-semibold text-sm md:text-base">
-          We're actively working to shorten these timelines even further.
+          We&apos;re actively working to shorten these timelines even further.
         </p>
       </section>
 
@@ -56,7 +56,7 @@ export default function ShippingPage() {
         </h4>
 
         <p className="font-semibold text-sm md:text-base">
-          Shipping typically takes 2–4 weeks from withdrawal, and we're
+          Shipping typically takes 2–4 weeks from withdrawal, and we&apos;re
           continuously optimizing our logistics to deliver faster and more
           efficiently.
         </p>
@@ -83,7 +83,7 @@ export default function ShippingPage() {
 
         <p className="font-semibold text-sm md:text-base">
           Any duties, taxes, customs fees, or other charges related to delivery
-          are the recipient's responsibility. Please review your local import
+          are the recipient&apos;s responsibility. Please review your local import
           and tax rules before ordering.
         </p>
       </section>
@@ -97,15 +97,15 @@ export default function ShippingPage() {
         </h4>
 
         <p className="font-semibold text-sm md:text-base">
-          Once your order is accepted, you'll receive a confirmation email.
+          Once your order is accepted, you&apos;ll receive a confirmation email.
         </p>
 
         <ul className="list-inside list-disc ml-4">
           <li className="font-semibold text-sm md:text-base">
-            If you don't receive confirmation within two (2) business days of
+            If you don&apos;t receive confirmation within two (2) business days of
             placing the order, contact us at{" "}
             <Link
-              className="text-brand underline underline-offset-2"
+              className="text-brand underline hover:opacity-80 transition underline-offset-2"
               href="mailto:support@hyp3.gg"
             >
               support@hyp3.gg
@@ -129,7 +129,7 @@ export default function ShippingPage() {
         </h4>
 
         <p className="font-semibold text-sm md:text-base">
-          We'll use reasonable efforts to deliver your items quickly and within
+          We&apos;ll use reasonable efforts to deliver your items quickly and within
           a reasonable time. However:
         </p>
 
@@ -170,7 +170,7 @@ export default function ShippingPage() {
         </ul>
 
         <p className="font-semibold text-sm md:text-base">
-          If, at our sole discretion, we determine the damage wasn't caused by
+          If, at our sole discretion, we determine the damage wasn&apos;t caused by
           you, we will (subject to availability) send a replacement or return
           the item to your HYP3 inventory. If the damage resulted from your
           actions, we are not responsible and will not return the card to your
@@ -189,7 +189,7 @@ export default function ShippingPage() {
         <p className="font-semibold text-sm md:text-base">
           Questions or issues?{" "}
           <Link
-            className="text-brand underline underline-offset-2"
+            className="text-brand underline hover:opacity-80 transition underline-offset-2"
             href="mailto:support@hyp3.gg"
           >
             support@hyp3.gg
