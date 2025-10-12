@@ -8,7 +8,7 @@ interface SectionHeaderProps {
 
 export default function SectionHeader({ headerTitle, SeeAllLink }: SectionHeaderProps) {
     return (
-        <div className='flex items-center gap-6 text-white'>
+        <div className='flex items-center gap-6 text-white grow'>
             <h3 className='text-base md:text-lg lg:text-xl font-bold capitalize'>{headerTitle}</h3>
             <div className='grow h-0.5 bg-brand' />
             {
