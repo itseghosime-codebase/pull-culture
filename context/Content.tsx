@@ -360,53 +360,53 @@ const Packs = [{
     imageSrc: '/assets/cards/Basketball-Gold.jpeg',
     title: 'Basketball Gold Pack',
     type: 'Basketball',
-    price: 25
+    price: 50
 }, {
     imageSrc: '/assets/cards/Football-Gold.jpeg',
     title: 'Football Gold Pack',
     type: 'Football',
-    price: 25
+    price: 50
 }, {
     imageSrc: '/assets/cards/Baseball-Gold.jpeg',
     title: 'Baseball Gold Pack',
     type: 'Baseball',
-    price: 25
+    price: 50
 }, {
     imageSrc: '/assets/cards/Pokemon-Gold.jpeg',
     title: 'Pokémon Gold Pack',
     type: 'Pokemon',
-    price: 25
+    price: 50
 }, {
     imageSrc: '/assets/cards/Multi-Sport-Gold.jpeg',
     title: 'Multi-Sport Gold Pack',
     type: 'Multi-Sport',
-    price: 25
+    price: 50
 },
 {
     imageSrc: '/assets/cards/Basketball-Platinum.jpeg',
     title: 'Basketball Platinum Pack',
     type: 'Basketball',
-    price: 25
+    price: 100
 }, {
     imageSrc: '/assets/cards/Football-Platinum.jpeg',
     title: 'Football Platinum Pack',
     type: 'Football',
-    price: 25
+    price: 100
 }, {
     imageSrc: '/assets/cards/Baseball-Platinum.jpeg',
     title: 'Baseball Platinum Pack',
     type: 'Baseball',
-    price: 25
+    price: 100
 }, {
     imageSrc: '/assets/cards/Pokemon-Platinum.jpeg',
     title: 'Pokémon Platinum Pack',
     type: 'Pokemon',
-    price: 25
+    price: 100
 }, {
     imageSrc: '/assets/cards/Multi-Sport-Platinum.jpeg',
     title: 'Multi-Sport Platinum Pack',
     type: 'Multi-Sport',
-    price: 25
+    price: 100
 },
 
 
