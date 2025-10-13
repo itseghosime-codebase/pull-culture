@@ -71,7 +71,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-xs sm:text-sm font-bold text-gray-300 text-center md:text-right">
-          © {new Date().getFullYear()} HYP3. All Rights Reserved.
+          Copyright © {new Date().getFullYear()} HYP3. All Rights Reserved.
         </p>
       </div>
     </footer>
