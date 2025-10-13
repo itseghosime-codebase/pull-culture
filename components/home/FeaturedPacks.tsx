@@ -8,7 +8,7 @@ import { AuctionsDb } from '@/context/Content'
 export default function FeaturedPacks() {
     return (
         <section className='px-4 space-y-4 pt-4'>
-            <SectionHeader headerTitle='Featured Auctions' SeeAllLink='/featured_auctions' />
+            <SectionHeader headerTitle='Featured Auctions' SeeAllLink='/marketplace' />
             <Swiper
                 slidesPerView={'auto'}
                 spaceBetween={20}

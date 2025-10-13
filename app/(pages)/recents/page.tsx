@@ -1,14 +1,14 @@
 'use client'
-import { ProvableTab } from '@/components/provablefair/ProvableTab'
+import { RecentsTab } from '@/components/recents/Recents'
 import PullsCard from '@/components/sharedUi/Cards/PullsCard'
 import RecentCard from '@/components/sharedUi/Cards/RecentCard'
 import { RecentPacks, Recents } from '@/context/Content'
 import React from 'react'
 
-export default function ProvablyFairPage() {
+export default function RecentsPage() {
     return (
         <div>
-            <ProvableTab
+            <RecentsTab
                 tabs={[
                     {
                         title: 'RECENT PULLS',

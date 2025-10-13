@@ -331,106 +331,99 @@ const RecentPacks = [{
 }]
 
 const Packs = [{
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Basketball-Silver.jpeg',
+    title: 'Basketball Silver Pack',
+    type: 'Basketball',
     price: 25
 }, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Football-Silver.jpeg',
+    title: 'Football Silver Pack',
+    type: 'Football',
     price: 25
 }, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Baseball-Silver.jpeg',
+    title: 'Baseball Silver Pack',
+    type: 'Baseball',
     price: 25
 }, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Pokemon-Silver.jpeg',
+    title: 'Pokémon Silver Pack',
+    type: 'Pokemon',
     price: 25
 }, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Multi-Sport-Silver.jpeg',
+    title: 'Multi-Sport Silver Pack',
+    type: 'Multi-Sport',
+    price: 25
+},
+{
+    imageSrc: '/assets/cards/Basketball-Gold.jpeg',
+    title: 'Basketball Gold Pack',
+    type: 'Basketball',
     price: 25
 }, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Football-Gold.jpeg',
+    title: 'Football Gold Pack',
+    type: 'Football',
     price: 25
 }, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Baseball-Gold.jpeg',
+    title: 'Baseball Gold Pack',
+    type: 'Baseball',
     price: 25
 }, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Pokemon-Gold.jpeg',
+    title: 'Pokémon Gold Pack',
+    type: 'Pokemon',
     price: 25
 }, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Multi-Sport-Gold.jpeg',
+    title: 'Multi-Sport Gold Pack',
+    type: 'Multi-Sport',
+    price: 25
+},
+{
+    imageSrc: '/assets/cards/Basketball-Platinum.jpeg',
+    title: 'Basketball Platinum Pack',
+    type: 'Basketball',
     price: 25
 }, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Football-Platinum.jpeg',
+    title: 'Football Platinum Pack',
+    type: 'Football',
     price: 25
 }, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Baseball-Platinum.jpeg',
+    title: 'Baseball Platinum Pack',
+    type: 'Baseball',
     price: 25
 }, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Pokemon-Platinum.jpeg',
+    title: 'Pokémon Platinum Pack',
+    type: 'Pokemon',
     price: 25
 }, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
+    imageSrc: '/assets/cards/Multi-Sport-Platinum.jpeg',
+    title: 'Multi-Sport Platinum Pack',
+    type: 'Multi-Sport',
     price: 25
-}, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
-    price: 25
-}, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
-    price: 25
-}, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
-    price: 25
-}, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
-    price: 25
-}, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
-    price: 25
-}, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
-    price: 25
-}, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
-    price: 25
-}, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
-    price: 25
-}, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
-    price: 25
-}, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
-    price: 25
-}, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
-    price: 25
-}, {
-    imageSrc: '/assets/cards/Pack-01.png',
-    title: 'Baseball Ember Pack',
-    price: 25
-}]
+},
+
+
+
+
+
+
+
+
+
+]
+
+
+
+
+
+
 
 const Recents = [{
     imageSrc: '/assets/cards/Pack-02.png',

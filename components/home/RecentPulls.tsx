@@ -8,7 +8,7 @@ import { RecentPacks } from '@/context/Content'
 export default function RecentPulls() {
     return (
         <section className='px-4 space-y-4 pt-4 w-full overflow-hidden'>
-            <SectionHeader headerTitle='Recent Pulls' SeeAllLink='/recent_pulls' />
+            <SectionHeader headerTitle='Recent Pulls' SeeAllLink='/recents' queryParams='RECENT PULLS' />
             <div className='w-full overflow-hidden'>
 
                 <Swiper

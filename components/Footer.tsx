@@ -12,11 +12,11 @@ export default function Footer() {
     { label: "Home", href: "/" },
     { label: "Packs", href: "/pack" },
     { label: "News", href: "/news" },
-     { label: "FAQ", href: "/how-it-works#faq" },
-    { label: "Support", href: "" },
+    { label: "FAQ", href: "/how-it-works#faq" },
+    { label: "Support", href: "#" },
     { label: "Feedback", href: "" }, // placeholder, replaced below
     { label: "Shipping", href: "/shipping" },
-    { label: "Provably Fair", href: "/provably-fair" },
+    { label: "Provably Fair", href: "#" },
     { label: "Terms", href: "/terms-of-service" },
     { label: "Privacy", href: "/privacy-policy" },
   ]

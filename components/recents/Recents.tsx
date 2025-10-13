@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import * as React from "react"
 import { motion } from "framer-motion"
@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/tabs"
 import { cn } from "@/lib/utils"
 import { useSidebar } from "../ui/sidebar"
+import { useSearchParams, useRouter } from "next/navigation"
 
 interface TabSectionProps {
     tabs: {
@@ -19,14 +20,33 @@ interface TabSectionProps {
     defaultTab?: string
 }
 
-export function ProvableTab({
-    tabs,
-    defaultTab
-}: TabSectionProps) {
-    const [activeTab, setActiveTab] = React.useState(defaultTab || tabs[0]?.title)
+export function RecentsTab({ tabs, defaultTab }: TabSectionProps) {
+    const searchParams = useSearchParams()
+    const router = useRouter()
+    const urlTab = searchParams.get("tab")
+    const initialTab = urlTab
+        ? decodeURIComponent(urlTab)
+        : defaultTab || tabs[0]?.title
+
+    const [activeTab, setActiveTab] = React.useState(initialTab)
     const tabRefs = React.useRef<Record<string, HTMLButtonElement | null>>({})
     const [indicatorStyle, setIndicatorStyle] = React.useState({ left: 0, width: 0 })
     const { open: sidebarOpen } = useSidebar()
+
+    // Update active tab if URL changes
+    React.useEffect(() => {
+        if (urlTab && decodeURIComponent(urlTab) !== activeTab) {
+            setActiveTab(decodeURIComponent(urlTab))
+        }
+    }, [urlTab])
+
+    // Update URL when tab changes
+    const handleTabChange = (val: string) => {
+        setActiveTab(val)
+        const encoded = encodeURIComponent(val)
+        const newUrl = `?tab=${encoded}`
+        router.replace(newUrl) // or router.push(newUrl) if you want history
+    }
 
     // Helper: Recalculate the underline position
     const updateIndicator = React.useCallback(() => {
@@ -37,9 +57,7 @@ export function ProvableTab({
         }
     }, [activeTab])
 
-    // Recalculate when tab, sidebar, or layout changes
     React.useEffect(() => {
-        // Wait until DOM layout settles after sidebar toggle
         const timer = setTimeout(() => {
             requestAnimationFrame(updateIndicator)
         }, 150)
@@ -51,14 +69,12 @@ export function ProvableTab({
         return () => window.removeEventListener("resize", updateIndicator)
     }, [updateIndicator])
 
-
     return (
         <Tabs
-            defaultValue={defaultTab || tabs[0]?.title}
-            onValueChange={(val) => setActiveTab(val)}
+            value={activeTab}
+            onValueChange={handleTabChange}
             className="w-full px-4 pb-8 space-y-5"
         >
-            {/* Tab Headers */}
             <div className="relative border-b-2 border-white/50">
                 <TabsList className="flex justify-evenly items-center gap-2 h-auto rounded-none bg-transparent w-full px-0">
                     {tabs.map((tab) => (
@@ -75,7 +91,6 @@ export function ProvableTab({
                     ))}
                 </TabsList>
 
-                {/* Animated Active Line */}
                 <motion.div
                     layout
                     transition={{ type: "spring", stiffness: 400, damping: 30 }}
@@ -87,7 +102,6 @@ export function ProvableTab({
                 />
             </div>
 
-            {/* Tab Content */}
             {tabs.map((tab) => (
                 <TabsContent key={tab.title} value={tab.title}>
                     {tab.renderItem()}
