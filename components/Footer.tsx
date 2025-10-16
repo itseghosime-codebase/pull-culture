@@ -5,7 +5,8 @@ import Link from "next/link"
 import React from "react"
 import Newsletter from "./sharedUi/Newsletter"
 import { BsInstagram, BsTiktok, BsTwitterX } from "react-icons/bs"
-import FeedbackDialog from "./FeedbackDialog"
+import FeedbackDialog from "./feedback/FeedbackDialog"
+
 
 export default function Footer() {
   const footerLinks = [
@@ -41,7 +42,7 @@ export default function Footer() {
         <Newsletter />
 
         {/* Socials */}
-        <div className="flex flex-col gap-3 items-center lg:items-end grow">
+        <div className="flex flex-col gap-3 items-center grow">
           <h3 className="text-brand text-xl sm:text-2xl font-bold">
             Follow Our Socials
           </h3>

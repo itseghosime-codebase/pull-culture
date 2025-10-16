@@ -32,7 +32,7 @@ export default function CategoryPage() {
                 </div>
             )}
             <div className='px-4 mt-5'>
-                <SectionHeader headerTitle={`${category} Marketplace`} />
+                <SectionHeader headerTitle={`${category === 'pokemon' ? 'pokémon' : category} Marketplace`} />
             </div>
             <Marketplace />
         </div>

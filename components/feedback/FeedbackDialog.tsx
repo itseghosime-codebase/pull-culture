@@ -8,9 +8,9 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { useSidebar } from "./ui/sidebar"
 import Image from "next/image"
 import FeedbackForm from "./FeedbackForm"
+import { useSidebar } from "../ui/sidebar"
 
 export default function FeedbackDialog() {
   const { open: sidebarOpen } = useSidebar()

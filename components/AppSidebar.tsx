@@ -30,8 +30,8 @@ import { usePathname } from "next/navigation"
 import React from "react"
 import { useSessionStore } from "@/lib/store/useSessionStore"
 import Authenticated from "./Authenticated"
-import { Button } from "./ui/button"
 import { useAnnouncementStore } from "@/lib/store/announcement-store"
+import SubmitDialog from "./submitCards/SubmitDialog"
 
 // Navigation links
 const Navigation = [
@@ -150,11 +150,7 @@ export function AppSidebar() {
         </SidebarContent>
         {/* ✅ SUBMIT BUTTON */}
         <SidebarFooter>
-          <Button
-            className="mt-auto rounded-full gap-4 bg-brand transition hover:bg-brand/80 text-dark h-12 font-bold text-base flex items-center justify-center"
-          >
-            Submit Cards
-          </Button>
+          <SubmitDialog />
         </SidebarFooter>
       </div>
     </Sidebar>

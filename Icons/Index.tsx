@@ -33,6 +33,7 @@ import ShippingIcon from './shippingicon.svg'
 import UserBold from './usersbold.svg'
 import GiftIcon from './giftIcon.svg'
 import OpenPack from './openPack.svg'
+import Dashboard from './dashboard.svg'
 
 export {
     SignInIcon,
@@ -69,5 +70,6 @@ export {
     ShippingIcon,
     UserBold,
     GiftIcon,
-    OpenPack
+    OpenPack,
+    Dashboard
 }
