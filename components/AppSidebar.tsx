@@ -45,6 +45,15 @@ import SubmitDialog from "./submitCards/SubmitDialog"
 import { Button } from "./ui/button"
 import { Loader2 } from "lucide-react"
 
+export const categories = [
+  { title: "Football", url: "/pack/football", icon: BallIcon },
+  { title: "Basketball", url: "/pack/basketball", icon: BasketBallIcon },
+  { title: "Baseball", url: "/pack/baseball", icon: BaseBallIcon },
+  { title: "Pokémon", url: "/pack/pokemon", icon: BoltCircleIcon },
+  { title: "Multi-Sport", url: "/pack/multi-sport", icon: TrophyIcon },
+]
+
+
 // -------------------- MAIN COMPONENT --------------------
 export function AppSidebar() {
   const { user, checkSession, logout } = useSessionStore()
@@ -100,13 +109,6 @@ export function AppSidebar() {
     { title: "Leaderboard", url: "/leaderboard", icon: DiamondIcon },
   ]
 
-  const categories = [
-    { title: "Football", url: "/pack/football", icon: BallIcon },
-    { title: "Basketball", url: "/pack/basketball", icon: BasketBallIcon },
-    { title: "Baseball", url: "/pack/baseball", icon: BaseBallIcon },
-    { title: "Pokémon", url: "/pack/pokemon", icon: BoltCircleIcon },
-    { title: "Multi-Sport", url: "/pack/multi-sport", icon: TrophyIcon },
-  ]
 
   return (
     <Sidebar variant="inset" className={`${isVisible && '!pt-[50px] lg:!pt-[55px]'} transition-all pl-0 duration-300 pr-2.5 pb-0 !border-r-0`}>

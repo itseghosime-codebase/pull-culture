@@ -1,7 +1,7 @@
 'use client';
 
 import React from "react";
-import { Categories } from "../AppSidebar";
+import { categories } from "../AppSidebar";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CovertIcon } from "@/Icons/Index";
@@ -41,8 +41,8 @@ export default function SharedTabs() {
         </li>
 
         {/* Dynamic Categories */}
-        {Array.isArray(Categories) &&
-          Categories.map((navLink) => {
+        {Array.isArray(categories) &&
+          categories.map((navLink) => {
             const Icon = navLink.icon;
             const isActive = pathname === navLink.url;
 
