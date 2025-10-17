@@ -6,6 +6,7 @@ import { AppSidebar } from "@/components/AppSidebar"
 import 'swiper/css';
 import "./globals.css";
 import SidebarWithInset from "@/components/SidebarWithInset";
+import { Suspense } from "react";
 
 
 const inter = Inter({
@@ -30,10 +31,12 @@ export default function RootLayout({
         className={`${inter.variable} antialiased bg-dark`}
       >
         <Announcement />
-        <SidebarProvider>
-          <AppSidebar />
-          <SidebarWithInset>{children}</SidebarWithInset>
-        </SidebarProvider>
+        <Suspense fallback={<div>Loading...</div>}>
+          <SidebarProvider>
+            <AppSidebar />
+            <SidebarWithInset>{children}</SidebarWithInset>
+          </SidebarProvider>
+        </Suspense>
       </body>
     </html>
   );
